@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+	padding: 0; 
+	box-sizing: border-box;
+} 
+
+body {
+	font-family:"Source sans pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #324554;
+	font-size: 1.1em;
+	line-height: 150%;
+}
+
+a {
+	text-decoration: none;
+	color: #5D79CD;
+}
+
+.site-nav .active {
+	color: #324554;
+}
+
+h2, h3, h5 {
+	font-family: Nunito, "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h2 {
+	padding: 0 0 20px 0;
+	font-size: 1.563em;
+} 
+
+h3 {
+	padding: 50px 0 20px 0;
+}
+
+h3 a {
+	color: #324554;
+}  
+
+#site-content {
+	max-width: 850px;
+	margin: 0 auto;
+	display: block; 
+}
+
+.site-header {
+	text-align: center;
+	margin-top: 50px;
+}
+.site-header h3{
+	padding: 0;
+}
+
+.site-header p {
+	background-color: #5D79CD;
+	display: inline-block;
+	padding: 3px;
+	font-style: italic;
+	color: #fff;
+	text-transform: lowercase;
+	opacity: 0.7;
+}
+
+.site-nav {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 30px 0 50px 0;
+	text-transform: lowercase;
+
+	font-size: 1.953em;
+	font-weight: bold;
+}
+
+.site-nav a {
+	color: #d6dadb;
+	transition: all 0.3s ease;
+	font-family: Nunito;
+}
+
+.site-nav a:hover {
+	color: #324554; 
+}
+
+.section-line {
+	width: 100%; 
+	height: 15px; 
+	border-bottom: 3px solid #eeeeee; 
+	text-align: center;
+}
+
+.section-heading {     
+	background-color: #fff; 
+	font-size: 0.8em;
+	padding: 0 10px;
+	text-transform: uppercase;
+
+}
+
+.content {
+	padding: 50px 0;
+}
+
+#about-me p {  
+	padding-right: 30px;
+}
+
+.about-content {
+	display: flex;
+	align-items: flex-start;
+}
+
+.about-content img {
+	object-fit: contain;
+}
+

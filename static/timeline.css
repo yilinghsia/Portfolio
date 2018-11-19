@@ -1,0 +1,115 @@
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px; 
+  z-index: 0;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: #FDE26C;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 55%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FDE26C;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.entry {
+  position: relative;
+}
+
+.year {
+  display: inline-block;
+  position: absolute;
+  left: 40%;
+  top: 18px;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+  display: inline-block;
+}
+
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.timeline .content {
+  padding: 20px 30px; 
+  position: relative;
+
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eeeeee;
+  border-radius: 2px;
+}
+
+.timeline h2 {
+  font-weight: 200;
+}
+
+.timeline .content p {
+  padding: 10px 0;
+}
+
+#current-projects { 
+  position: absolute;
+  padding: 15px;
+  display: inline-block;
+  width: 250px; 
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffe252' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  z-index: 3;
+}
+
+#social-list {
+  padding: 5px 15px;
+}
+
+#social-list a {
+  color: #5D79CD;
+}
+

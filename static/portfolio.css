@@ -1,0 +1,143 @@
+
+#projects {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1.2rem;
+} 
+
+#projects .title {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.project-tile {
+	border: 1px solid #f0f0f0;
+	border-radius: 5px;  
+	height: 300px; 
+	font-size: 0.8em;
+	overflow: hidden;
+
+}
+
+.project-image {  
+	height: 215px; 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.project-image img {
+	height: 100%; 
+	flex-grow: 1;
+	object-fit: cover;
+}
+
+.description, .title {
+	display: block;
+	text-align: center; 
+}
+
+.send-email {
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+}
+
+.portfolio-tile {
+	position: relative;
+	top: 25%;
+}
+
+.portfolio-tile .project-image {
+	height: auto;
+	text-align: center;
+	font-size: 20px;
+}
+
+.description { 
+	color: #cbccce;
+}
+
+.project-info {
+	padding: 15px 0;
+}
+
+/*project content page */
+.project-summary img {
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+	object-fit: contain; 
+}
+
+
+.project-summary {
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 10px 15px #e0e0e0;
+	padding: 10px 40px  50px 40px; 
+	margin-bottom: 35px;
+}
+
+
+.project-challenge {
+	margin-top: 50px;
+	padding: 0 40px;
+}
+.project-challenge p {
+	width: 45%; 
+}
+
+.project-screens {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;	
+	margin-bottom: 50px;
+}
+
+.project-screens img {  
+	width: 49%;
+	object-fit: contain;
+	margin-left: 30px;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 0.5rem;
+}
+
+.gallery div {
+	text-align: center;
+}
+
+.challenge-entry img { 
+	width: 100%; 
+}
+
+.challenge-entry p{ 
+	padding: 0 40px; 
+}
+
+.full-design {
+	object-fit: contain;
+	width: 100%;
+	margin-top: 50px;
+}
+
+.styleguide {
+	display: flex;
+	justify-content: space-between;	
+}
+
+.styleguide img{
+	object-fit: contain; 
+	height: 430px;
+	max-width: 55%;
+}
+
+.caption {
+	font-size: 12px;
+	position: relative;
+	top: -6px;
+}
